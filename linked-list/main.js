@@ -17,7 +17,7 @@ list.prepend(34)
 console.log("List: ", list.toString())
 
 console.log("Size: ", list.getSize())
-console.log("First value: ", list.getHead())
+console.log("First value: ", list.headList())
 console.log("Last value: ", list.getTail())
 console.log("Value at index 3: ", list.atValue(3))
 console.log("Remove last value: ", list.pop(), ", Actual list: ", list.toString())

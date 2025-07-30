@@ -6,20 +6,20 @@ export default class LinkedList {
         this.head = null;
     }
 
-    append(value){
+    append(value, key = null){
         if(!this.head){
-            this.head = new Node(value)
+            this.head = new Node(value, key)
         } else {
             let current = this.head;
             while(current.next){
                 current = current.next;
             }
-            current.next = new Node(value)
+            current.next = new Node(value, key)
         }
     }
 
-    prepend(value){
-        let newHead = new Node(value, this.head);
+    prepend(value, key = null){
+        let newHead = new Node(value, key, this.head);
         this.head = newHead;
     }
 
@@ -39,7 +39,11 @@ export default class LinkedList {
     }
 
     getHead(){
-        return this.head.value;
+        return this.head;
+    }
+
+    headList(){
+        return this.getHead().value;
     }
 
     getTail(){
@@ -86,13 +90,16 @@ export default class LinkedList {
         }
     }
 
-    contains(value){
+    contains(value, key = null){
         if(!this.head){
-            return "Empty list"
+            return "Not found"
         } else {
             let current = this.head;
-            while(current.next){
-                if(current.value && current.value == value){
+            while(current){
+                if (
+                    (key !== null && current.key === key) || // Busca por chave (HashTable)
+                    (key === null && current.value === value) // Busca por valor
+                ) {
                     return true;
                 } else {
                     current = current.next;
@@ -102,11 +109,15 @@ export default class LinkedList {
         }
     }
 
-    find(value){
+    // Recebe o valor a ser encontrado e retorna o index dele
+    find(value, key = null){
         let current = this.head;
         let num = 0
-        while(current.next.next){
-            if(current.value == value){
+        while(current){
+            if (
+                (key !== null && current.key === key) ||
+                (key === null && current.value === value)
+            ){
                 return num;
             } else {
                 current = current.next;
@@ -140,6 +151,11 @@ export default class LinkedList {
             let prevNode = this.at(index - 1);
             prevNode.next = nextValue;
         }
+    }
+
+    updateAt(value, index){
+        let nodeFound = this.at(index);
+        nodeFound.value = value;
     }
 
     toString(){
