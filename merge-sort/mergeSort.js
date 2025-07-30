@@ -1,4 +1,4 @@
-function mergeSort(arr){
+export default function mergeSort(arr){
     if(arr.length <= 1) return arr;
 
     let middle = Math.floor(arr.length/2);
@@ -16,6 +16,3 @@ function merge(arr, left, right){
     }
     return arr.concat(left, right);
 }
-
-let test = [8, 3, 6, 4, 0, 2]
-console.log(mergeSort(test))
