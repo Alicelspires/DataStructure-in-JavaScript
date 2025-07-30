@@ -8,11 +8,11 @@ Exercícios de implementação de Estrutura de Dados em JavaScript. Utilizando d
 
 Data Structures                                  | implemented
 :------------------------------------------------|:-----------:
-Linked Lists - Listas Ligadas                    | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript/merge-sort/mergeSort.js)
-Recursion with Fibonacci                         | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript/recursion/fibonacci.js)
-Merge Sort                                       | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript)
-Hash Table - Tabela de espalhamento              | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript)
-Binary search tree - Árvore de pesquisa binária  | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript)
+Linked Lists - Listas Ligadas                    | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript/tree/main/linked-list)
+Recursion with Fibonacci                         | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript/tree/main/recursion)
+Merge Sort                                       | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript/tree/main/merge-sort)
+Hash Table - Tabela de espalhamento              | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript/tree/main/hash-map)
+Binary search tree - Árvore de pesquisa binária  | [Link](https://github.com/Alicelspires/DataStructure-in-JavaScript/tree/main/binary-search-tree)
   
 </div>
 
@@ -77,6 +77,6 @@ Fibonacci - 8 digits (Recursion): [ 0, 1, 1,  2, 3, 5, 8, 13 ]
 
 <div align="center">
   
-![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=Alicelspires.Unit-testing-with-Jest&left_color=grey&right_color=black&left_text=Visitors)
+![visitor badge](https://visitor-badge.laobi.icu/badge?page_id=Alicelspires.DataStructure-in-JavaScript&left_color=grey&right_color=black&left_text=Visitors)
 
 </div> 
