@@ -17,5 +17,5 @@ function fibsRec(numLength){
     return fibArray;
 }
 
-console.log(fibs(8))
-console.log(fibsRec(8))
+console.log(`Fibonacci - 8 digits (Function):`, fibs(8))
+console.log(`Fibonacci - 8 digits (Recursion):`, fibsRec(8))
